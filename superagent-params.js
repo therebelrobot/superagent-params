@@ -1,11 +1,7 @@
 var URIUtil = require('uri-util');
-
 module.exports = function(params){
   params = params || {}
   return function (request){
-    console.log('SUPERAGENTPARAM', params)
-    console.log('SUPERAGENTREQUEST', request)
-
     var query = URIUtil.parse(request.url)
     var newQuery = {}
     if(request.url.indexOf('?') > -1){
@@ -19,10 +15,8 @@ module.exports = function(params){
     Object.keys(params).forEach(function _forEachNewParam(key){
       newQuery[key] = params[key]
     })
-    console.log(newQuery)
     var querystring = URIUtil.stringify(newQuery)
     request.url += '?'+querystring
-    console.log('REQUESTURL', request)
     return request
   }
 }
