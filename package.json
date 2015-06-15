@@ -1,6 +1,6 @@
 {
   "name": "superagent-params",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "visionmedia/superagent middleware to append a param object to the request URL",
   "main": "superagent-params.js",
   "scripts": {
