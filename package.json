@@ -1,0 +1,32 @@
+{
+  "name": "superagent-params",
+  "version": "0.0.1",
+  "description": "visionmedia/superagent middleware to append a param object to the request URL",
+  "main": "superagent-params.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therebelrobot/superagent-params.git"
+  },
+  "keywords": [
+    "superagent",
+    "middleware",
+    "get",
+    "params",
+    "param",
+    "parameters",
+    "parameter",
+    "object"
+  ],
+  "author": "Trent Oswald <trentoswald@therebelrobot.com> (@therebelrobot)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therebelrobot/superagent-params/issues"
+  },
+  "homepage": "https://github.com/therebelrobot/superagent-params#readme",
+  "dependencies": {
+    "uri-util": "^1.1.0"
+  }
+}
